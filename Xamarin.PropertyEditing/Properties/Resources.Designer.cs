@@ -1150,5 +1150,41 @@ namespace Xamarin.PropertyEditing.Properties {
                 return ResourceManager.GetString("Directory", resourceCulture);
             }
         }
+        
+        public static string CreateBindingTitle {
+            get {
+                return ResourceManager.GetString("CreateBindingTitle", resourceCulture);
+            }
+        }
+        
+        public static string ShowSettings {
+            get {
+                return ResourceManager.GetString("ShowSettings", resourceCulture);
+            }
+        }
+        
+        public static string HideSettings {
+            get {
+                return ResourceManager.GetString("HideSettings", resourceCulture);
+            }
+        }
+        
+        public static string Converter {
+            get {
+                return ResourceManager.GetString("Converter", resourceCulture);
+            }
+        }
+        
+        public static string SelectTypeTitle {
+            get {
+                return ResourceManager.GetString("SelectTypeTitle", resourceCulture);
+            }
+        }
+        
+        public static string DoneTitle {
+            get {
+                return ResourceManager.GetString("DoneTitle", resourceCulture);
+            }
+        }
     }
 }
