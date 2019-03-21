@@ -6,8 +6,8 @@ namespace Xamarin.PropertyEditing.Mac
 	internal class EditorContainer
 		: PropertyContainer
 	{
-		public EditorContainer (IHostResourceProvider hostResources, IEditorView editorView)
-			: base (hostResources, editorView, editorView?.NeedsPropertyButton ?? false)
+		public EditorContainer (IHostResourceProvider hostResources, IEditorView editorView, bool? needsPropertyButton = null)
+			: base (hostResources, editorView, needsPropertyButton ?? editorView?.NeedsPropertyButton ?? false)
 		{
 		}
 
@@ -22,7 +22,8 @@ namespace Xamarin.PropertyEditing.Mac
 					return;
 
 				EditorView.ViewModel = value;
-				PropertyButton.ViewModel = value as PropertyViewModel;
+				if (PropertyButton != null)
+					PropertyButton.ViewModel = value as PropertyViewModel;
 			}
 		}
 

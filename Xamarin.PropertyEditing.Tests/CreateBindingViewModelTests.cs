@@ -194,10 +194,10 @@ namespace Xamarin.PropertyEditing.Tests
 			await vm.ValueConverters.Task;
 			Assert.That (vm.ValueConverters.Value, Contains.Item (visi));
 
-			if (OSPlatform.CurrentPlatform.IsWindows) {
-				Assert.That (vm.ValueConverters.Value.Count, Is.EqualTo (3)); // visi, No Converter, Request Converter
-			} else if (OSPlatform.CurrentPlatform.IsMacOSX) {
+			if (vm.OSPlatform == PlatformID.Unix) {
 				Assert.That (vm.ValueConverters.Value.Count, Is.EqualTo (2)); // visi, No Converter
+			} else {
+				Assert.That (vm.ValueConverters.Value.Count, Is.EqualTo (3)); // visi, No Converter, Request Converter
 			}
 		}
 
