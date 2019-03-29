@@ -577,4 +577,10 @@
     <value>Select {0} type</value>
     <comment>Select {property} type</comment>
   </data>
+  <data name="AddVariant" xml:space="preserve">
+    <value>Add Variant</value>
+  </data>
+  <data name="RemoveVariant" xml:space="preserve">
+    <value>RemoveVariant</value>
+  </data>
 </root>

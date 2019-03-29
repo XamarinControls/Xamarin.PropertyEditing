@@ -79,6 +79,15 @@ namespace Xamarin.PropertyEditing.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Variant.
+        /// </summary>
+        public static string AddVariant {
+            get {
+                return ResourceManager.GetString("AddVariant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Introduce variation based on:.
         /// </summary>
         public static string AddVariationHelpText {
@@ -1011,6 +1020,15 @@ namespace Xamarin.PropertyEditing.Properties {
         public static string RemoveItem {
             get {
                 return ResourceManager.GetString("RemoveItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RemoveVariant.
+        /// </summary>
+        public static string RemoveVariant {
+            get {
+                return ResourceManager.GetString("RemoveVariant", resourceCulture);
             }
         }
         
